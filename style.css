@@ -1,0 +1,22 @@
+*{
+    font-family: 'Bruno Ace SC', cursive;
+}
+header{
+    width:450px ;
+    margin: 20px auto; /*center alignment alignment*/
+    
+}
+
+main {
+    width: 450px;
+    border: 2px solid red;
+    border-radius: 10%;
+    margin: 20px auto; 
+    padding: 20px 10px;
+  /* margin-top: 20px;
+   margin-left: 10px; center alignment */
+   
+}
+.small-label {
+    font-size: 0.6rem;
+}
