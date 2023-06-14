@@ -22,19 +22,19 @@
 
 
         <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Task Name :</span>
+            <span class="input-group-text" id="newTaskInput">Task Name :</span>
             <input type="text" class="form-control" aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-sm">
         </div>
 
         <h6 class="pt-2">Task Description:</h6>
         <div class="form-floating">
-            <textarea class="form-control" placeholder="Please describe the task" id="floatingTextarea" ></textarea>
-            <label for="floatingTextarea"class="small-label" >Please describe the task</label>
+            <textarea class="form-control" placeholder="Please describe the task" id="task-descript"></textarea>
+            <label for="floatingTextarea" class="small-label">Please describe the task</label>
         </div>
 
         <h6 class="pt-3"> Assigned To:</h6>
-        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <select id="assigned-to" class="form-select form-select-sm" aria-label=".form-select-sm example">
             <option selected>Select a devloper</option>
             <option value="1">Tom </option>
             <option value="2">Samad</option>
@@ -43,88 +43,91 @@
             <option value="4">Jasmin</option>
         </select>
 
-    <h6 class="pt-4">Due Date:</h6>
-    <input type="date" name="dateSel" id="date">
+        <h6 class="pt-4">Due Date:</h6>
+        <input type="date" name="dateSel" id="date">
 
 
-    <button type="button" class="btn btn-outline-success ">Add Task</button>
+        <button id="newTaskInput" type="button" class="btn btn-outline-success ">Add Task</button>
 
 
-</main>
+        < /main>
 
 
-    
-    <!-- Example 1 -->
-    <div class="main-card p-2">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Take out trash</h5>
-                <p class="card-text">Task Description: Take out the trash from the kitchen and put it in the outdoor trash cans.</p>
-                <p class="card-text">Assigned To: Tom</p>
-                <p class="card-text">Due Date: May 15, 2023</p>
-                <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+
+            <!-- Example 1 -->
+            <div class="main-card p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Take out trash</h5>
+                        <p class="card-text">Task Description: Take out the trash from the kitchen and put it in the
+                            outdoor trash cans.</p>
+                        <p class="card-text">Assigned To: Tom</p>
+                        <p class="card-text">Due Date: May 15, 2023</p>
+                        <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Example 2 -->
-    <div class="main-card p-2">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Buy groceries</h5>
-                <p class="card-text">Task Description: Buy groceries for the weekend including milk, bread, eggs, and fruits.</p>
-                <p class="card-text">Assigned To: Jen</p>
-                <p class="card-text">Due Date: May 20, 2023</p>
-                <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+
+            <!-- Example 2 -->
+            <div class="main-card p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Buy groceries</h5>
+                        <p class="card-text">Task Description: Buy groceries for the weekend including milk, bread,
+                            eggs, and fruits.</p>
+                        <p class="card-text">Assigned To: Jen</p>
+                        <p class="card-text">Due Date: May 20, 2023</p>
+                        <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    
-    <!-- Example 3 -->
-    <div class="main-card p-2">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Fix broken sink</h5>
-                <p class="card-text">Task Description: Fix the leaky faucet and unclog the drain in the kitchen sink.</p>
-                <p class="card-text">Assigned To: Samad</p>
-                <p class="card-text">Due Date: May 31, 2023</p>
-                <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+
+            <!-- Example 3 -->
+            <div class="main-card p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Fix broken sink</h5>
+                        <p class="card-text">Task Description: Fix the leaky faucet and unclog the drain in the kitchen
+                            sink.</p>
+                        <p class="card-text">Assigned To: Samad</p>
+                        <p class="card-text">Due Date: May 31, 2023</p>
+                        <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
- <!-- Example 4 -->
-    <div class="main-card p-2 ">
-        <div class="card  ">
-          <div class="card-body">
-            <h5 class="card-title">Meeting</h5>
-            <span>Meeting with manager</span>
-            <p class="card-text">Task Description:</p>
-            <p>Discuss new project proposal with John</p>
-            <p class="card-text">Assigned To</p>
-            <p>Samad</p>
-            <p class="card-text">Due Date</p>
-            <p>2023-05-15</p>
-            <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
-          </div>
-        </div>
-      </div>
-       <!-- Example 5 -->
-      <div class="main-card p-2 ">
-        <div class="card  ">
-          <div class="card-body">
-            <h5 class="card-title">Fix Coding Bug</h5>
-            <span>Fix bug in login form</span>
-            <p class="card-text">Task Description:</p>
-            <p>There is a bug in the login form where users cannot enter their password</p>
-            <p class="card-text">Assigned To</p>
-            <p>Jen</p>
-            <p class="card-text">Due Date</p>
-            <p>2023-05-20</p>
-            <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
-          </div>
-        </div>
-      </div>
-   <!-- group list that we aren't sure is needed
+            <!-- Example 4 -->
+            <div class="main-card p-2 ">
+                <div class="card  ">
+                    <div class="card-body">
+                        <h5 class="card-title">Meeting</h5>
+                        <span>Meeting with manager</span>
+                        <p class="card-text">Task Description:</p>
+                        <p>Discuss new project proposal with John</p>
+                        <p class="card-text">Assigned To</p>
+                        <p>Samad</p>
+                        <p class="card-text">Due Date</p>
+                        <p>2023-05-15</p>
+                        <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Example 5 -->
+            <div class="main-card p-2 ">
+                <div class="card  ">
+                    <div class="card-body">
+                        <h5 class="card-title">Fix Coding Bug</h5>
+                        <span>Fix bug in login form</span>
+                        <p class="card-text">Task Description:</p>
+                        <p>There is a bug in the login form where users cannot enter their password</p>
+                        <p class="card-text">Assigned To</p>
+                        <p>Jen</p>
+                        <p class="card-text">Due Date</p>
+                        <p>2023-05-20</p>
+                        <button type="button" class="btn btn-success position-absolute top-0 end-0 m-2">Status</button>
+                    </div>
+                </div>
+            </div>
+            <!-- group list that we aren't sure is needed
         <li class="list-group-item active">Example 1</li>
         <li class="list-group-item">Example 2</li>
         <li class="list-group-item">Example 3</li>
@@ -133,13 +136,14 @@
       </ul>
     -->
 
-      
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous"></script>
+            <!-- <script src="js/taskManager.js"></script> -->
+            <script src="js/index.js"></script>
 </body>
 
 </html>
