@@ -30,3 +30,8 @@ main {
     padding: 20px 10px
 }
 
+#alert {
+    display: hidden;
+    padding: 5px;
+    text-align: center;
+}
