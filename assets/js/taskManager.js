@@ -17,9 +17,52 @@ class TaskManager {
       };
       this.tasks.push(task);
     }
+    //Add the save method
+    save() {
+      const tasksJson = JSON.stringify(this.tasks);
+      localStorage.setItem("tasks", tasksJson);
+  
+      const currentId = String(this.currentId);
+      localStorage.setItem("currentId", currentId);
+    }
   }
   
-  // Testing the TaskManager class
-  const taskManager = new TaskManager();
+  //add the load method
+
+  load() {
+    const tasks = localStorage.getItem("tasks");
+
+    if (tasks) {
+      this.tasks = JSON.parse(tasks);
+    }
+
+    const currentId = localStorage.getItem("currentId");
+
+    if (currentId) {
+      this.currentId = Number(currentId);
+    }
+  };
+
+
+const taskManager = new TaskManager();
+taskManager.load();
+taskManager.render();
+
+
+  taskManager.save();
+  
   console.log(taskManager.tasks);
+
+
+    // save() {
+    //   let tasksJson = JSON.stringify({name: 'name', description: 'description', assignedTo: 'assignedTo', dueDate: 'dueDate', status: 'status'});
+    //   localStorage.setItem('tasks', tasksJson);
+    //   let currentIdString = this.currentId.toString();
+    //   localStorage.setItem('currentId', currentIdString);
+    // }
+    // };
+  
+  // // Testing the TaskManager class
+  // const taskManager = new TaskManager();
+  // console.log(taskManager.tasks);
   
