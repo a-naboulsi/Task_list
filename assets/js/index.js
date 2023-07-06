@@ -106,3 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     alertContainer.appendChild(alertElement);
   }
 });
+
+//testing the save method
+taskManager.save();
+
