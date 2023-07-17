@@ -1,68 +1,56 @@
-
 class TaskManager {
-    constructor(currentId = 0) {
-      this.tasks = [];
-      this.currentId = currentId;
-    }
-  // add task function
-    addTask(name, description, assignedTo, dueDate, status = 'TODO') {
-      this.currentId++;
-      const task = {
-        id: this.currentId,
-        name: name,
-        description: description,
-        assignedTo: assignedTo,
-        dueDate: dueDate,
-        status: status
-      };
-      this.tasks.push(task);
-    }
-    //Add the save method
-    save() {
-      const tasksJson = JSON.stringify(this.tasks);
-      localStorage.setItem("tasks", tasksJson);
-  
-      const currentId = String(this.currentId);
-      localStorage.setItem("currentId", currentId);
-    }
+  constructor(currentId = 0) {
+    this.tasks = [];
+    this.currentId = currentId;
+    this.load(); // Load tasks from local storage when creating an instance of TaskManager
   }
-  
-  //add the load method
 
   load() {
-    const tasks = localStorage.getItem("tasks");
+    const tasksJson = localStorage.getItem('tasks');
+    const currentIdString = localStorage.getItem('currentId');
 
-    if (tasks) {
-      this.tasks = JSON.parse(tasks);
+    if (tasksJson && currentIdString) {
+      this.tasks = JSON.parse(tasksJson);
+      this.currentId = parseInt(currentIdString);
     }
+  }
 
-    const currentId = localStorage.getItem("currentId");
+  save() {
+    const tasksJson = JSON.stringify(this.tasks);
+    localStorage.setItem('tasks', tasksJson);
 
-    if (currentId) {
-      this.currentId = Number(currentId);
-    }
+    const currentIdString = this.currentId.toString();
+    localStorage.setItem('currentId', currentIdString);
+  }
+
+  addTask(taskName, taskDescription, taskAssignedTo) {
+
+    this.save(); 
+  }
+
+  updateTaskStatus(taskId, status) {
+ 
+    this.save(); // Save tasks after updating task status
+  }
+
+ 
+}
+
+
+addTask(name, description, assignedTo, dueDate, status = 'TODO') {
+  this.currentId++;
+  const task = {
+    id: this.currentId,
+    name: name,
+    description: description,
+    assignedTo: assignedTo,
+    dueDate: dueDate,
+    status: status
   };
+  this.tasks.push(task);
+}
+// maybe delete
 
-
+// Testing the TaskManager class
 const taskManager = new TaskManager();
-taskManager.load();
-taskManager.render();
-
-
-  taskManager.save();
-  
-  console.log(taskManager.tasks);
-
-
-    // save() {
-    //   let tasksJson = JSON.stringify({name: 'name', description: 'description', assignedTo: 'assignedTo', dueDate: 'dueDate', status: 'status'});
-    //   localStorage.setItem('tasks', tasksJson);
-    //   let currentIdString = this.currentId.toString();
-    //   localStorage.setItem('currentId', currentIdString);
-    // }
-    // };
-  
-  // // Testing the TaskManager class
-  // const taskManager = new TaskManager();
-  // console.log(taskManager.tasks);
-  
+console.log(taskManager.tasks);
