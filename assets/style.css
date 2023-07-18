@@ -22,7 +22,7 @@ main {
 .card {
 
     max-width: 350px;
-    font-size: .8em;
+    font-size: 1em;
     border: 2px solid red;
     border-radius: 10%;
     box-sizing: border-box;
@@ -30,8 +30,19 @@ main {
     padding: 20px 10px
 }
 
-#alert {
-    display: hidden;
-    padding: 5px;
-    text-align: center;
-}
+.card-container.hidden {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+/*   .card-font{
+    
+  } */
+
+  strong {
+    font-family: 'Bruno Ace SC', cursive;
+
+  }
