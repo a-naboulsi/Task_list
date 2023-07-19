@@ -2,8 +2,8 @@
 
 ## Group #8 members:
 
-<br> Tom Ricca  
-<br> Abdessamad Naboulsi  
-<br> Ladi-Amor Pettis  
-<br> Jen Brinker  
-<br> Jasmin Hubbard  
+### <br> Tom Ricca  
+### <br> Abdessamad Naboulsi  
+### <br> Ladi-Amor Pettis  
+### <br> Jen Brinker  
+### <br> Jasmin Hubbard  
