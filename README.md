@@ -1,4 +1,4 @@
-**Junior Web Developer - Final Project - Task Planner Web App
+Junior Web Developer - Final Project - Task Planner Web App
 
 Group #8 members:
 
