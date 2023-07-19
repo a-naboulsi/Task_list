@@ -1,9 +1,9 @@
-Junior Web Developer - Final Project - Task Planner Web App
+# Junior Web Developer - Final Project - Task Planner Web App
 
-Group #8 members:
+## Group #8 members:
 
-Tom Ricca
-Abdessamad Naboulsi
-Ladi-Amor Pettis
-Jen Brinker, 
-Jasmin Hubbard
+( <br> ) Tom Ricca  
+( <br> )Abdessamad Naboulsi  
+( <br> )Ladi-Amor Pettis  
+( <br> )Jen Brinker  
+( <br> )Jasmin Hubbard  
